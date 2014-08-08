@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../../Chapter 2/parameters_login.rb'
+require_relative '../../Chapter_2/parameters_login.rb'
 include RSpecMixin
 
 describe "parameters.rb" do

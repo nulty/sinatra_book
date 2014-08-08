@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'pry'
 
 # before we process a route, we'll set the response as
 # plain text and set up an array of viable moves that
@@ -19,7 +18,6 @@ get "/throw/:type" do
   # we halt with status code of 403 (Forbidden) and let them
   # know they need to make a valid throw to play.
   if !@throws.include?(player_throw)
-    binding.pry
     halt 403, "You must throw one of the following: #{@throws}"
   end
 
