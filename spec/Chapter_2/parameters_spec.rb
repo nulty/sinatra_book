@@ -16,4 +16,12 @@ describe "parameters.rb" do
       expect(last_response.body).to eq "Hello, iain your age is 111"
     end
   end
+
+  describe "with splat route matcher" do
+    it "response body is correct" do
+      get "/iain/something"
+      expect(last_response).to be_ok
+      expect(last_response.body).to eq "You passed in [\"iain/something\"]"
+    end
+  end
 end

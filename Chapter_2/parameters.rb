@@ -5,3 +5,7 @@ get '/:name' do
   text << " your age is #{params[:age]}" if params[:age]
   text
 end
+
+get '/*' do
+  "You passed in #{params[:splat]}"
+end
