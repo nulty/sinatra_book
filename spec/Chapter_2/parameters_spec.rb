@@ -24,4 +24,12 @@ describe "parameters.rb" do
       expect(last_response.body).to eq "You passed in [\"iain/something\"]"
     end
   end
+
+  describe "route after splat" do
+    it "is not matched" do
+      get "/specific"
+      expect(last_response).to be_ok
+      expect(last_response.body).to eq "Hello, specific"
+    end
+  end
 end
