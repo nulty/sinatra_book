@@ -1,5 +1,7 @@
 require 'sinatra'
 
 get '/:name' do
-  "Hello, #{params[:name]}"
+  text = "Hello, #{params[:name]}"
+  text << " your age is #{params[:age]}" if params[:age]
+  text
 end
