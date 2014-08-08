@@ -1,0 +1,1 @@
+Dir.glob("Chapter*/**") { |file| require_relative file  }
