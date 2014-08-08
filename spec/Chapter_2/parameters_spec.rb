@@ -1,6 +1,5 @@
 require 'spec_helper'
 require_relative '../../Chapter_2/parameters.rb'
-include RSpecMixin
 
 describe "parameters.rb" do
   it "response body is correct" do
