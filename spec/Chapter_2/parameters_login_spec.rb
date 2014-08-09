@@ -1,5 +1,4 @@
 require 'spec_helper'
-require_relative '../../Chapter_2/parameters_login.rb'
 
 describe "parameters.rb" do
   describe "/login" do

@@ -1,5 +1,4 @@
 require 'spec_helper'
-require_relative '../../Chapter_2/aroutes_with_regex.rb'
 
 describe "Regex routes" do
   describe "with 'greedy' parameter" do

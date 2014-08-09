@@ -1,5 +1,4 @@
 require 'spec_helper'
-require_relative '../../Chapter_2/halt.rb'
 
 describe "Halt method" do
   it "returns a 500 error" do

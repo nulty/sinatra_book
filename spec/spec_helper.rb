@@ -1,7 +1,7 @@
 require 'rack/test'
 require 'rspec'
 
-# require File.expand_path '../../sinatra_book.rb', __FILE__
+require File.expand_path '../../sinatra_book.rb', __FILE__
 
 ENV['RACK_ENV'] = 'test'
 

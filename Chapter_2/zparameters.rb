@@ -1,3 +1,6 @@
+# file named with z to ensure it is last alphabetically when loaded
+# because it contains splat and root parameter matchers
+
 require 'sinatra'
 
 get '/:name' do
